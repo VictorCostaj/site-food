@@ -2,65 +2,109 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./src/css/estilo.css">
-    <link rel="stylesheet" href="./src/css/navbar.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"
-        integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Food</title>
+	<link rel="stylesheet" href="./src/css/estilo.css">
+	<link rel="stylesheet" href="./src/css/navbar.css">
+	<link rel="stylesheet" href="./src/css/home.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"
+		integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<title>Food</title>
 </head>
 
 <body>
-    <header>
-        <nav id="navbar">
-            <i class="fa-solid fa-burger" id="nav_logo"> Food</i>
+	<header>
+		<nav id="navbar">
+			<i class="fa-solid fa-burger" id="nav_logo"> Food</i>
 
-            <ul id="nav_list">
-                <li class="nav-item active">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Cardápio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
-            <button class="btn-default">
-                Peça aqui
-            </button>
+			<ul id="nav_list">
+				<li class="nav-item active">
+					<a href="#home">Início</a>
+				</li>
+				<li class="nav-item">
+					<a href="#menu">Cardápio</a>
+				</li>
+				<li class="nav-item">
+					<a href="#testimonials">Avaliações</a>
+				</li>
+			</ul>
+			<button class="btn-default">
+				Peça aqui
+			</button>
 
-            <button id="mobile_btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
+			<button id="mobile_btn">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+		</nav>
 
-        <!--##### menu mobile  #####-->
-        <div id="mobile_menu">
-            <ul id="mobile_nav_list">
-                <li class="nav-item">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Cardápio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
+		<!--##### menu mobile  #####-->
+		<div id="mobile_menu">
+			<ul id="mobile_nav_list">
+				<li class="nav-item">
+					<a href="#home">Início</a>
+				</li>
+				<li class="nav-item">
+					<a href="#menu">Cardápio</a>
+				</li>
+				<li class="nav-item">
+					<a href="#testimonials">Avaliações</a>
+				</li>
+			</ul>
 
-            <button class="btn-default">
-                Peça aqui
-            </button>
-        </div>
-    </header>
-    <script src="./src/JS/script.js"></script>
+			<button class="btn-default">
+				Peça aqui
+			</button>
+		</div>
+	</header>
+
+	<main id="content">
+		<section id="home">
+			<div class="shape"></div>
+			<div id="cta">
+				<h1 class="title">
+					O sabor vai <br>até<span>você</span>
+				</h1>
+				<p class="description">
+					Lorem ipsum, dolor sit amet consectetur <br>adipisicing elit. Omnis ipsum<br> veniam cumque laboriosam id
+					illo!
+				</p>
+
+				<div id="cta_buttons">
+					<a href="#" class="btn-default">Ver cardápio</a>
+
+					<a href="tel:+5555555555" id="phone_button">
+						<button class="btn-default">
+							<i class="fa-solid fa-phone"></i>
+						</button>
+						(11)9999-9999
+					</a>
+				</div>
+				<div class="social-media-buttons">
+					<a href="">
+						<i class="fa-brands fa-whatsapp"></i>
+					</a>
+
+					<a href="">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+
+					<a href="">
+						<i class="fa-brands fa-facebook"></i>
+					</a>
+				</div>
+			</div>
+
+			<div id="banner">
+				<img src="./src/img/hero.png" alt="imagem-prato">
+			</div>
+		</section>
+	</main>
+	<script src="./src/JS/script.js"></script>
 
 </body>
 
